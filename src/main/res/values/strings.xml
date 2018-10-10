@@ -838,4 +838,6 @@
     <string name="filename_hint">Filename</string>
     <string name="thumbnail">Thumbnail</string>
     <string name="enter_filename">Please enter a filename</string>
+    <string name="create_file_from_template">Creating file from template…</string>
+    <string name="error_retrieving_templates">Error retrieving templates</string>
 </resources>
