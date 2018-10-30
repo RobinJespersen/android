@@ -118,8 +118,6 @@ public class ChooseTemplateDialogFragment extends DialogFragment implements Dial
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        int accentColor = ThemeUtils.primaryAccentColor(getContext());
-
         Bundle arguments = getArguments();
         if (arguments == null) {
             throw new IllegalArgumentException("Arguments may not be null");
@@ -129,6 +127,8 @@ public class ChooseTemplateDialogFragment extends DialogFragment implements Dial
         if (activity == null) {
             throw new IllegalArgumentException("Activity may not be null");
         }
+
+        int accentColor = ThemeUtils.primaryAccentColor(getContext());
 
         parentFolder = arguments.getParcelable(ARG_PARENT_FOLDER);
         Type type = Type.valueOf(arguments.getString(ARG_TYPE));
